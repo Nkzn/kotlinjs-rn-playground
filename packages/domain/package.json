@@ -1,0 +1,17 @@
+{
+  "name": "kotlin-domained-rn-domain",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "models/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "./gradlew clean assemble",
+    "build:models": "ts2kt ./models/types/* -d ./src/main/kotlin/domain"
+  },
+  "dependencies": {
+    "kotlin": "^1.3.11"
+  },
+  "devDependencies": {
+    "ts2kt": "^0.1.3"
+  }
+}
